@@ -1,13 +1,58 @@
-const menu = document.querySelectorAll(".menu");
+const ctx = document.getElementById("kpiChart");
 
-menu.forEach(item => {
+new Chart(ctx, {
 
-    item.addEventListener("click", function () {
+type:"bar",
 
-        menu.forEach(link => link.classList.remove("active"));
+data:{
+labels:[
+"PHU",
+"Green Viability",
+"Capital Formation",
+"EMR Adoption"
+],
 
-        this.classList.add("active");
+datasets:[{
 
-    });
+label:"Performance %",
+data:[100,93,33,82]
+
+}]
+
+},
+
+options:{
+responsive:true
+}
+
+});
+
+
+const ctx2 = document.getElementById("budgetChart");
+
+new Chart(ctx2, {
+
+type:"pie",
+
+data:{
+labels:[
+"PHU",
+"Green Tool",
+"Capital Dev",
+"EMR System"
+],
+
+datasets:[{
+
+data:[
+10415200,
+45000000,
+265000000,
+3160000
+]
+
+}]
+
+}
 
 });

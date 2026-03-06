@@ -21,18 +21,64 @@
 
         <div class="nav-right">
             <a href="#" class="menu active">Dashboard</a>
-            <a href="#">Strategic</a>
-            <a href="#">Core</a>
-            <a href="#">Support</a>
+            <a href="strategic.html">Strategic</a>
+            <a href="core.html">Core</a>
+            <a href="support.html">Support</a>
         </div>
 
     </nav>
 
-<!-- Main Content (Start)-->
+    <!-- Main Content (Start)-->
+    <div class="dashboard">
 
-<!-- Main Content (End)-->
+        <div class="kpi-container">
+
+            <div class="kpi-card">
+                <i class="fas fa-hospital"></i>
+                <h3>100%</h3>
+                <p>PHU Functionality</p>
+            </div>
+
+            <div class="kpi-card">
+                <i class="fas fa-leaf"></i>
+                <h3>93%</h3>
+                <p>Green Viability</p>
+            </div>
+
+            <div class="kpi-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>33%</h3>
+                <p>Capital Formation</p>
+            </div>
+
+            <div class="kpi-card">
+                <i class="fas fa-laptop-medical"></i>
+                <h3>82%</h3>
+                <p>Paperless EMR</p>
+            </div>
+
+        </div>
+
+
+        <div class="charts">
+
+            <div class="chart-box">
+                <h3>Strategic KPI Performance</h3>
+                <canvas id="kpiChart"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h3>Budget Allocation</h3>
+                <canvas id="budgetChart"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Main Content (End)-->
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 
