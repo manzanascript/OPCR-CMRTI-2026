@@ -35,6 +35,38 @@ body {
 
 }
 
+/* Menu */
+
+.nav-right a {
+
+    color: #dcdcdc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+
+}
+
+/* Hover */
+
+.nav-right a:hover {
+
+    color: #fdd502;
+
+}
+
+/* Active Menu */
+
+.nav-right a.active {
+
+    background: #fdd502;
+    color: #142b6f;
+    font-weight: 600;
+
+}
+
 .nav-left {
 
     font-size: 18px;
